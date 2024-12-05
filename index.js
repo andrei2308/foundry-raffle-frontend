@@ -29,7 +29,7 @@ enterRaffle.addEventListener('click', async () => {
             console.log("Entering raffle...");
             const tx = await contract.enterRaffle({
                 value: ethers.parseEther("0.001"),
-                gasLimit: 10000000
+                gasLimit: 1000000
             });
             await tx.wait(1);
             console.log("Raffle entered!");
